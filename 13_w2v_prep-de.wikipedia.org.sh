@@ -7,6 +7,9 @@
 set -e
 . 10_w2v_prep_data
 
+[ -e ./tmp/pre-w2v-${CLEAN_VERSION}_de.wikipedia.org.txt ] || \
 cat <(bzip2 -c -d ./tmp/de.wikipedia.org/*.tt.bz2) \
     > ./tmp/pre-w2v-${CLEAN_VERSION}_de.wikipedia.org.txt
+
+[ -e ./tmp/w2v-${CLEAN_VERSION}_de.wikipedia.org.txt ] || \
 clean < ./tmp/pre-w2v-${CLEAN_VERSION}_de.wikipedia.org.txt > ./tmp/w2v-${CLEAN_VERSION}_de.wikipedia.org.txt
