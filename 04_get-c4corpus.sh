@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+which aws || { echo "You need to installi the 'Universal Command Line Environment for AWS'"; exit 1; }
+
 aws s3 ls s3://ukp-research-data/c4corpus/CC-MAIN-2015-48/cc-final-2015-48/ | grep 'Lang_de'
 
 aws s3 sync \
