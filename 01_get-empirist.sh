@@ -15,7 +15,9 @@ set -e
 # * remove utf-8 BOMs (supposedly there are none...)
 SUBDIR=empirist
 mkdir -p ${SUBDIR}
-for file in empirist_test_pos_cmc.zip empirist_test_pos_web.zip \
+for file in \
+    empirist_gold_cmc.zip empirist_gold_web.zip \
+    empirist_test_pos_cmc.zip empirist_test_pos_web.zip \
     empirist_test_tok_cmc.zip empirist_test_tok_web.zip \
     empirist_training_cmc.zip empirist_training_web.zip \
     empirist_trial_cmc.zip empirist_trial_web.zip; do
