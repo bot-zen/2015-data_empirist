@@ -4,7 +4,7 @@
 # * the EmpiriST 2016 data
 
 set -e
-. 00_get_data
+. 99_utils-get_data
 
 #
 ### EmpiriST

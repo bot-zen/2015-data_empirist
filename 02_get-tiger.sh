@@ -4,7 +4,7 @@
 # * the Tiger Corpus
 
 set -e
-. 00_get_data
+. 99_utils-get_data
 
 #
 ### Tiger Corpus

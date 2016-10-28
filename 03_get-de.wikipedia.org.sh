@@ -4,7 +4,7 @@
 # * de.wikipedia.org Artikel, Artikeldiskussionen, Nutzerdiskussionen
 
 set -e
-. 00_get_data
+. 99_utils-get_data
 
 #
 ### Wikipedia
