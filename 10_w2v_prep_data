@@ -6,6 +6,7 @@ set -e
 
 CLEAN_VERSION='1'
 clean () {
+    cat "${1:-/dev/stdin}" | \
     # adapted from word2vec/demo-train-big-model-v1.sh
     awk '{if ($0 == "<s>") {} else if ($0 == "</s>") { print "" } else { printf "%s ",tolower($0)}}' | \
     perl -e '
