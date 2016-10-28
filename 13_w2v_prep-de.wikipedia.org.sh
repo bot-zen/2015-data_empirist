@@ -5,7 +5,7 @@
 #
 
 set -e
-. 10_w2v_prep_data
+. 99_utils-w2v_prep_data
 
 [ -e ./tmp/pre-w2v_de.wikipedia.readme ] || \
     cat > ./tmp/pre-w2v_de.wikipedia.readme << END

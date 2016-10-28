@@ -14,7 +14,7 @@ export W2V_ITER=5
 export W2V_MINCOUNT
 export W2V_MINCOUNT=100
 
-. 10_w2v_prep_data
+. 99_utils-w2v_prep_data
 
 set +e
 W2V_ALPHA=0.025 W2V_CBOW=0 ./30_w2v_process_data.sh \
