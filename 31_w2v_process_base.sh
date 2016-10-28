@@ -14,8 +14,8 @@ export W2V_ITER=5
 export W2V_MINCOUNT
 
 function experiment01 {
-    W2V_ALPHA=0.025 W2V_CBOW=0 ./30_w2v_process_data.sh <(cat tmp/w2v-1_${DATA_NAME}${DATA_NAME_EXT})
-    W2V_ALPHA=0.05  W2V_CBOW=1 ./30_w2v_process_data.sh <(cat tmp/w2v-1_${DATA_NAME}${DATA_NAME_EXT})
+    W2V_ALPHA=0.025 W2V_CBOW=0 ./99_utils-w2v_process_data.sh <(cat tmp/w2v-1_${DATA_NAME}${DATA_NAME_EXT})
+    W2V_ALPHA=0.05  W2V_CBOW=1 ./99_utils-w2v_process_data.sh <(cat tmp/w2v-1_${DATA_NAME}${DATA_NAME_EXT})
 }
 
 DATA_NAME="empirist"
